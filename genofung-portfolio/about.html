@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>GENOFUNG</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/LOGO1.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+               <li> <a href="index.html">HOME</a></li>
+                    <li> <a href="about.html">ABOUT</a></li>
+                    <li> <a href="program.html">PROGRAM DAN KEPENGURUSAN</a></li>
+                    <li> <a href="sejarah.html">SEJARAH DAN PRESTASI</a></li>
+                    <li> <a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+    <!-----about us content---->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>Komunitas Paling Kece</h1>
+          <p>Unggulan!!?? LUARR BIASAA, jelajahi kami sekarang untuk mengetahui lebih banyak tentang kami.</p>
+          <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="images/12 mipa 1 gen 6 (2).jpg" />
+        </div>
+      </div>
+    </section>
+    <!----footer------>
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Komunitas Unggulan SMA Negeri 1 Sidikalang merupakan komunitas yang didirikan dalam mendidik setiap insan sekolah menjadi siswa yang berakal budi dan berbudi luhur dengan meneranpkan nilai-nilai unggulan. Website ini dibuat sebagai
+        media informasi mengenai komunitas unggulan, baik itu program, kepengurusan, sejarah, prestasi, dan lain-lain. Dan dikelola oleh Divisi Informasi dan Teknologi Komunitas Unggulan SMA Negeri 1 Sidikalang.
+      </p>
+      <div class="icons">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-tiktok"></i>
+        <i class="fab fa-discord"></i>
+      </div>
+      <p>Dibuat dengan penuh <i class="fa fa-heart"></i> oleh tim IT Unggulan SMA Negeri 1 Sidikalang</p>
+    </section>
+
+    <!------JavaScript for Toggle Menu------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
